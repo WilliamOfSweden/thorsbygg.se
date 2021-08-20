@@ -6,7 +6,7 @@ const Masthead: FC = () => {
     <section>
       <StaticImage
         src='../../../images/hero-img-landscape.jpeg'
-        alt='Light bulb standing on the floor, turned on and connected to a wall socket.'
+        alt='Miniature house standing in blueprints with bricks in front of it.'
         loading='eager'
         formats={['auto', 'webp', 'avif']}
         placeholder='blurred'
@@ -14,7 +14,7 @@ const Masthead: FC = () => {
       />
       <StaticImage
         src='../../../images/hero-img-portrait.jpeg'
-        alt='Light bulb standing on the floor, turned on and connected to a wall socket.'
+        alt='Miniature house standing in blueprints with bricks in front of it.'
         loading='eager'
         formats={['auto', 'webp', 'avif']}
         placeholder='blurred'

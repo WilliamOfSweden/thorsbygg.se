@@ -1,5 +1,5 @@
 ---
-title: index-page-masthead
+title: Thors Bygg
 ---
 
 Vi förverkligar drömmar!

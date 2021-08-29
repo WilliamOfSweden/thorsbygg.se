@@ -14,49 +14,48 @@ const useStyles = makeStyles((theme: Theme) =>
       },
     },
     mobileOnly: {
+      marginTop: `4rem`,
       [theme.breakpoints.up('sm')]: {
         display: `none`,
       },
-    },
-    section: {
-      // height: `100vh`,
-      // [theme.breakpoints.up('sm')]: {
-      //   height: `100vh`,
-      // },
     },
   })
 )
 
 const Masthead: FC = () => {
   const {
-    markdownRemark: {
-      internal: { content },
-    },
+    file: { childrenMarkdownRemark },
   } = useStaticQuery(
     graphql`
       query IndexPageMastheadQuery {
-        markdownRemark(frontmatter: { title: { eq: "index-page-masthead" } }) {
-          internal {
-            content
+        file(absolutePath: { regex: "/content/indexPage/masthead/" }) {
+          childrenMarkdownRemark {
+            frontmatter {
+              title
+            }
+            internal {
+              content
+            }
           }
         }
       }
     `
   )
 
+  const title = childrenMarkdownRemark[0].frontmatter.title
+
+  const content = childrenMarkdownRemark[0].internal.content
+
   const classes = useStyles()
 
   return (
-    <Box
-      className={classes.section}
-      component='section'
-      bgcolor='#fefefe'
-      pt={10}
-    >
-      <Typography variant='h1' align='center'>
-        Thors Bygg
+    <Box component='section' pt={12}>
+      <Typography color='primary' variant='h1' align='center'>
+        {title}
       </Typography>
-      <Typography align='center'>{content}</Typography>
+      <Typography align='center' variant='h4'>
+        {content}
+      </Typography>
       <StaticImage
         className={classes.desktopOnly}
         src='../../../images/hero-img-landscape.jpeg'

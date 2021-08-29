@@ -12,7 +12,7 @@ const Layout: FC<Props> = ({ children }) => {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <main>{children}</main>
-      <div style={{ height: `100vh` }}></div>
+      <div style={{ height: `100vh`, background: `#f3f7fb` }}></div>
     </ThemeProvider>
   )
 }

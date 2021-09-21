@@ -15,7 +15,7 @@
 
 <a href='https://thorsbygg.se' target='_blank' rel='noreferrer noopener'>www.thorsbygg.se</a>
 
----
+[![Netlify Status](https://api.netlify.com/api/v1/badges/29afc317-9947-4d45-b536-0992875375d7/deploy-status)](https://app.netlify.com/sites/zen-engelbart-ab7e42/deploys)
 
 ## Tech Stack
 

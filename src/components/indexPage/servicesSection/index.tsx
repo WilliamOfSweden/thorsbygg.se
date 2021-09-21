@@ -8,6 +8,9 @@ import { PALETTE } from '../../../styles/theme'
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
+    img: {
+      height: `100%`,
+    },
     outerGrid: {
       ['&:nth-child(odd)']: {
         background: PALETTE.bgAlt,
@@ -22,9 +25,12 @@ const useStyles = makeStyles((theme: Theme) =>
       display: `flex`,
       flexDirection: `column`,
       justifyContent: 'center',
-      padding: theme.spacing(2),
+      paddingLeft: theme.spacing(2),
+      paddingRight: theme.spacing(2),
+      paddingBottom: theme.spacing(8),
+      paddingTop: theme.spacing(8),
       [theme.breakpoints.up('md')]: {
-        padding: theme.spacing(4),
+        padding: theme.spacing(8),
       },
     },
   })
@@ -43,6 +49,7 @@ const ServicesSection = () => {
                 gatsbyImageData: IGatsbyImageData
               }
             }
+            imageAlt: string
           }
           internal: {
             content: string
@@ -73,6 +80,7 @@ const ServicesSection = () => {
                     gatsbyImageData
                   }
                 }
+                imageAlt
               }
               internal {
                 content
@@ -98,15 +106,15 @@ const ServicesSection = () => {
           >
             <Grid item xs={12} md={6}>
               <GatsbyImage
-                alt={'hej'}
+                alt={edge.node.frontmatter.imageAlt}
+                className={classes.img}
                 image={
                   edge.node.frontmatter.image.childImageSharp.gatsbyImageData
                 }
-                style={{ height: `100%` }}
               />
             </Grid>
             <Grid className={classes.textWrapper} item xs={12} md={6}>
-              <Typography color='primary' variant='h3'>
+              <Typography color='primary' variant='h3' gutterBottom>
                 {edge.node.frontmatter.title}
               </Typography>
               <Typography>{edge.node.internal.content}</Typography>

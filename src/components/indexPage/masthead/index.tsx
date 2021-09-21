@@ -53,7 +53,7 @@ const Masthead: FC = () => {
       <Typography color='primary' variant='h1' align='center'>
         {title}
       </Typography>
-      <Typography align='center' variant='h4'>
+      <Typography align='center' variant='subtitle1'>
         {content}
       </Typography>
       <StaticImage

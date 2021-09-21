@@ -14,6 +14,7 @@ const useStyles = makeStyles(() =>
     },
     container: {
       maxWidth: `800px`,
+      paddingBottom: `5rem`,
     },
   })
 )
@@ -52,7 +53,7 @@ const SustainabilitySection: FC = () => {
         placeholder='none'
         layout='fullWidth'
       />
-      <Typography align='center' color='primary' component='h2' variant='h3'>
+      <Typography align='center' color='primary' paragraph variant='h2'>
         {childrenMarkdownRemark[0].frontmatter.title}
       </Typography>
       <Typography align='center'>

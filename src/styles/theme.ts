@@ -7,9 +7,11 @@ export const PALETTE = {
   textColor: `#555`,
 }
 
-const HEADING_FONT = 'martel'
-
-const BODY_FONT = 'open-sans'
+const FONTS = {
+  headings: 'montserrat',
+  body: 'raleway',
+  subTitle: 'Nothing You Could Do',
+}
 
 const theme = responsiveFontSizes(
   createTheme({
@@ -38,25 +40,29 @@ const theme = responsiveFontSizes(
         },
 
         body1: {
-          fontFamily: BODY_FONT,
+          fontFamily: FONTS.body,
           fontSize: 20,
         },
 
         h1: {
           letterSpacing: `2px`,
-          fontFamily: HEADING_FONT,
+          fontFamily: FONTS.headings,
           fontWeight: 900,
         },
 
         h2: {
           letterSpacing: `2px`,
-          fontFamily: HEADING_FONT,
+          fontFamily: FONTS.headings,
           fontWeight: 800,
         },
         h3: {
           letterSpacing: `2px`,
-          fontFamily: HEADING_FONT,
+          fontFamily: FONTS.headings,
           fontWeight: 700,
+        },
+        subtitle1: {
+          fontFamily: FONTS.subTitle,
+          fontSize: `calc(1rem + 2vw)`,
         },
       },
     },

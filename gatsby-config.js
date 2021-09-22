@@ -1,11 +1,13 @@
 module.exports = {
   siteMetadata: {
+    authour: 'William Daghouz',
     ogDescription: `Vi utför totalentreprenader, underentreprenader, nybyggnation, ombyggnation, tillbyggnation och mindre servicearbeten.`,
     ogImageUrl: `https://thorsbygg.se/banner.png`,
     ogType: 'website',
     siteDescription: `Company Websites | Thors Bygg`,
     siteTitle: `Thors Bygg`,
     siteUrl: `https://thorsbygg.se`,
+  },
   plugins: [
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,

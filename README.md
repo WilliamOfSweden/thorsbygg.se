@@ -1,7 +1,3 @@
-<div align='center'>
-    <img alt='Thors Bygg | Logo' src='https://thorsbygg.se/logo.svg' width='180' />
-</div>
-
 # Thors Bygg • Company Website
 
 <a href='https://thorsbygg.se' target='_blank' rel='noreferrer noopener'>

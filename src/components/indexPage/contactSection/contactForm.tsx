@@ -87,6 +87,7 @@ const ContactForm = () => {
         color='primary'
         fullWidth
         size='large'
+        type='submit'
         variant='contained'
       >
         Skicka

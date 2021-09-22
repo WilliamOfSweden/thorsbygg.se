@@ -36,9 +36,7 @@ const Footer = () => {
         >
           <Typography className={classes.developerLink} align='center'>
             Website developed by{' '}
-            <strong style={{ textDecoration: `underline` }}>
-              William Daghouz
-            </strong>
+            <span style={{ textDecoration: 'underline' }}>William Daghouz</span>
             .
           </Typography>
         </a>

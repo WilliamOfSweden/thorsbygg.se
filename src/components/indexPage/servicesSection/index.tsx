@@ -21,18 +21,17 @@ const useStyles = makeStyles((theme: Theme) =>
         },
       },
     },
+    section: {
+      maxWidth: '1536px',
+    },
     textWrapper: {
       display: `flex`,
       flexDirection: `column`,
       justifyContent: 'center',
-      paddingBottom: theme.spacing(8),
+      paddingBottom: theme.spacing(4),
       paddingLeft: theme.spacing(2),
       paddingRight: theme.spacing(2),
-      paddingTop: theme.spacing(8),
-
-      '&:nth-last-child(1)': {
-        paddingBottom: theme.spacing(2),
-      },
+      paddingTop: theme.spacing(4),
 
       [theme.breakpoints.up('lg')]: {
         padding: theme.spacing(8),
@@ -100,7 +99,7 @@ const ServicesSection = () => {
   const classes = useStyles()
 
   return (
-    <section>
+    <section className={classes.section}>
       {edges.map(edge => {
         return (
           <Grid

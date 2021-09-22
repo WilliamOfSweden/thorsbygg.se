@@ -3,7 +3,7 @@ import { createTheme, responsiveFontSizes } from '@material-ui/core/styles'
 export const PALETTE = {
   bg: '#fefefe',
   bgAlt: `#e2e8f7`,
-  primary: `#3f76a3`,
+  primary: `#2a4e6c`,
   textColor: `#555`,
 }
 
@@ -78,10 +78,6 @@ const theme = responsiveFontSizes(
       text: {
         primary: PALETTE.textColor,
       },
-
-      // secondary: {
-      //   main: PALETTE.secondary,
-      // },
     },
   })
 )

@@ -1,12 +1,12 @@
 import React, { FC } from 'react'
-import { createStyles, makeStyles } from '@material-ui/core/styles'
+import { createStyles, makeStyles, Theme } from '@material-ui/core/styles'
 import { graphql, useStaticQuery } from 'gatsby'
 import Container from '@material-ui/core/Container'
 import { StaticImage } from 'gatsby-plugin-image'
 import Typography from '@material-ui/core/Typography'
 import Button from '@material-ui/core/Button'
 
-const useStyles = makeStyles(() =>
+const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     btn: {
       display: `block`,
@@ -14,7 +14,11 @@ const useStyles = makeStyles(() =>
     },
     container: {
       maxWidth: `800px`,
-      paddingBottom: `5rem`,
+      paddingBottom: theme.spacing(5),
+
+      [theme.breakpoints.up('md')]: {
+        paddingBottom: theme.spacing(8),
+      },
     },
   })
 )
@@ -41,6 +45,9 @@ const SustainabilitySection: FC = () => {
     `
   )
 
+  const { content } = childrenMarkdownRemark[0].internal
+  const { title } = childrenMarkdownRemark[0].frontmatter
+
   const classes = useStyles()
 
   return (
@@ -54,11 +61,9 @@ const SustainabilitySection: FC = () => {
         layout='fullWidth'
       />
       <Typography align='center' color='primary' paragraph variant='h2'>
-        {childrenMarkdownRemark[0].frontmatter.title}
+        {title}
       </Typography>
-      <Typography align='center'>
-        {childrenMarkdownRemark[0].internal.content}
-      </Typography>
+      <Typography align='center'>{content}</Typography>
       <Button
         color='primary'
         variant='contained'

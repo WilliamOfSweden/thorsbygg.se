@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import { makeStyles, Theme, createStyles } from '@material-ui/core/styles'
+import { createStyles, makeStyles, Theme } from '@material-ui/core/styles'
 import { PALETTE } from '../../../styles/theme'
 import { graphql, useStaticQuery } from 'gatsby'
 import Container from '@material-ui/core/Container'
@@ -11,6 +11,10 @@ const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     aboutSection: {
       background: PALETTE.bgAlt,
+    },
+    img: {
+      display: 'block',
+      height: '100%',
     },
     textWrapper: {
       display: `flex`,
@@ -48,27 +52,30 @@ const AboutSection: FC = () => {
     `
   )
 
+  const { content } = childrenMarkdownRemark[0].internal
+  const { title } = childrenMarkdownRemark[0].frontmatter
+
   const classes = useStyles()
 
   return (
     <Container className={classes.aboutSection} disableGutters maxWidth='xl'>
       <Grid container>
         <Grid item xs={12} md={6}>
-          {' '}
           <StaticImage
-            src='../../../images/about.jpeg'
-            alt='Flowers layed on white background, i a heart shape.'
-            loading='eager'
+            alt='A contstruction worker pointing with a couple.'
             formats={['auto', 'webp', 'avif']}
-            placeholder='none'
             layout='fullWidth'
+            loading='eager'
+            className={classes.img}
+            placeholder='none'
+            src='../../../images/about.jpeg'
           />
         </Grid>
         <Grid className={classes.textWrapper} item xs={12} md={6}>
-          <Typography color='primary' variant='h2'>
-            {childrenMarkdownRemark[0].frontmatter.title}
+          <Typography color='primary' paragraph variant='h2'>
+            {title}
           </Typography>
-          <Typography>{childrenMarkdownRemark[0].internal.content}</Typography>
+          <Typography>{content}</Typography>
         </Grid>
       </Grid>
     </Container>

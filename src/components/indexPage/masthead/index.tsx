@@ -3,7 +3,7 @@ import { createStyles, makeStyles, Theme } from '@material-ui/core/styles'
 import { graphql, useStaticQuery } from 'gatsby'
 import Box from '@material-ui/core/Box'
 import { StaticImage } from 'gatsby-plugin-image'
-import { Typography } from '@material-ui/core'
+import Typography from '@material-ui/core/Typography'
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -42,9 +42,8 @@ const Masthead: FC = () => {
     `
   )
 
-  const title = childrenMarkdownRemark[0].frontmatter.title
-
-  const content = childrenMarkdownRemark[0].internal.content
+  const { content } = childrenMarkdownRemark[0].internal
+  const { title } = childrenMarkdownRemark[0].frontmatter
 
   const classes = useStyles()
 

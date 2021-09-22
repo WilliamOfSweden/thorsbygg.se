@@ -5,14 +5,22 @@ import Container from '@material-ui/core/Container'
 import Box from '@material-ui/core/Box'
 import Typography from '@material-ui/core/Typography'
 import Button from '@material-ui/core/Button'
-
-// import Button from 'react-bootstrap/Button'
-// import scrollTo from 'gatsby-plugin-smoothscroll'
+import scrollTo from 'gatsby-plugin-smoothscroll'
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     btn: {
-      marginTop: theme.spacing(2),
+      marginTop: theme.spacing(1),
+
+      [theme.breakpoints.up('sm')]: {
+        width: 'inherit',
+      },
+    },
+
+    text: {
+      [theme.breakpoints.up('sm')]: {
+        textAlign: 'center',
+      },
     },
   })
 )
@@ -38,14 +46,13 @@ const CTASection: React.FC = () => {
     `
   )
 
-  const title = childrenMarkdownRemark[0].frontmatter.title
-
-  const content = childrenMarkdownRemark[0].internal.content
+  const { content } = childrenMarkdownRemark[0].internal
+  const { title } = childrenMarkdownRemark[0].frontmatter
 
   const classes = useStyles()
 
   return (
-    <Container maxWidth='md'>
+    <Container component='section' maxWidth='md'>
       <Box
         display='flex'
         flexDirection='column'
@@ -53,17 +60,24 @@ const CTASection: React.FC = () => {
         pb={10}
         pt={10}
       >
-        <Typography align='center' color='primary' paragraph variant='h2'>
+        <Typography
+          align='left'
+          className={classes.text}
+          color='primary'
+          paragraph
+          variant='h2'
+        >
           {title}
         </Typography>
-        <Typography align='center' paragraph>
+        <Typography align='left' className={classes.text} paragraph>
           {content}
         </Typography>
 
         <Button
-          // onClick={() => scrollTo('#contact')}
+          onClick={() => scrollTo('#contact')}
           className={classes.btn}
           color='primary'
+          fullWidth
           size='large'
           variant='contained'
         >

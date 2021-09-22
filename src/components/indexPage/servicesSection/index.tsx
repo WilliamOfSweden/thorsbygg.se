@@ -25,11 +25,16 @@ const useStyles = makeStyles((theme: Theme) =>
       display: `flex`,
       flexDirection: `column`,
       justifyContent: 'center',
+      paddingBottom: theme.spacing(8),
       paddingLeft: theme.spacing(2),
       paddingRight: theme.spacing(2),
-      paddingBottom: theme.spacing(8),
       paddingTop: theme.spacing(8),
-      [theme.breakpoints.up('md')]: {
+
+      '&:nth-last-child(1)': {
+        paddingBottom: theme.spacing(2),
+      },
+
+      [theme.breakpoints.up('lg')]: {
         padding: theme.spacing(8),
       },
     },

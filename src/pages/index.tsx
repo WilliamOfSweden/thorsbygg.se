@@ -1,6 +1,8 @@
-import React, { FC } from 'react'
+import React, { FC, Fragment } from 'react'
 import { PageProps } from 'gatsby'
+
 import Layout from '../components/layout/'
+import SEO from '../components/seo'
 import Masthead from '../components/indexPage/masthead/'
 import CTASection from '../components/indexPage/ctaSection/'
 import ServicesSection from '../components/indexPage/servicesSection/'
@@ -10,14 +12,17 @@ import ContactSection from '../components/indexPage/contactSection/'
 
 const IndexPage: FC<PageProps> = () => {
   return (
-    <Layout>
-      <Masthead />
-      <CTASection />
-      <ServicesSection />
-      <SustainabilitySection />
-      <AboutSection />
-      <ContactSection />
-    </Layout>
+    <Fragment>
+      <SEO />
+      <Layout>
+        <Masthead />
+        <CTASection />
+        <ServicesSection />
+        <SustainabilitySection />
+        <AboutSection />
+        <ContactSection />
+      </Layout>
+    </Fragment>
   )
 }
 

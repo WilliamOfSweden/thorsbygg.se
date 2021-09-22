@@ -7,10 +7,10 @@ export const PALETTE = {
   textColor: `#555`,
 }
 
-const FONTS = {
+export const FONTS = {
   headings: 'montserrat',
   body: 'raleway',
-  subTitle: 'Nothing You Could Do',
+  subHeading: 'Nothing You Could Do',
 }
 
 const theme = responsiveFontSizes(
@@ -59,10 +59,6 @@ const theme = responsiveFontSizes(
           letterSpacing: `2px`,
           fontFamily: FONTS.headings,
           fontWeight: 700,
-        },
-        subtitle1: {
-          fontFamily: FONTS.subTitle,
-          fontSize: `calc(1rem + 2vw)`,
         },
       },
     },

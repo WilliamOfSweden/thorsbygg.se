@@ -4,6 +4,7 @@ import { graphql, useStaticQuery } from 'gatsby'
 import Box from '@material-ui/core/Box'
 import { StaticImage } from 'gatsby-plugin-image'
 import Typography from '@material-ui/core/Typography'
+import { FONTS } from '../../../styles/theme'
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -18,6 +19,10 @@ const useStyles = makeStyles((theme: Theme) =>
       [theme.breakpoints.up('sm')]: {
         display: `none`,
       },
+    },
+    subHeading: {
+      fontFamily: FONTS.subHeading,
+      fontSize: `calc(1rem + 2vw)`,
     },
   })
 )
@@ -52,7 +57,7 @@ const Masthead: FC = () => {
       <Typography color='primary' variant='h1' align='center'>
         {title}
       </Typography>
-      <Typography align='center' variant='subtitle1'>
+      <Typography align='center' className={classes.subHeading}>
         {content}
       </Typography>
       <StaticImage

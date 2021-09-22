@@ -1,8 +1,10 @@
 import React from 'react'
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles'
+import { graphql, useStaticQuery } from 'gatsby'
 import Container from '@material-ui/core/Container'
+import Typography from '@material-ui/core/Typography'
+
 import { PALETTE } from '../../../styles/theme'
-import { Typography } from '@material-ui/core'
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -23,6 +25,20 @@ const useStyles = makeStyles((theme: Theme) =>
 )
 
 const Footer = () => {
+  const {
+    site: {
+      siteMetadata: { author },
+    },
+  } = useStaticQuery(graphql`
+    query FooterQuery {
+      site {
+        siteMetadata {
+          author
+        }
+      }
+    }
+  `)
+
   const classes = useStyles()
 
   return (
@@ -36,8 +52,7 @@ const Footer = () => {
         >
           <Typography className={classes.developerLink} align='center'>
             Website developed by{' '}
-            <span style={{ textDecoration: 'underline' }}>William Daghouz</span>
-            .
+            <span style={{ textDecoration: 'underline' }}>{author}</span>.
           </Typography>
         </a>
       </Container>

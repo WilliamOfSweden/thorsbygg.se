@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    authour: 'William Daghouz',
+    author: 'William Daghouz',
     ogDescription: `Vi utför totalentreprenader, underentreprenader, nybyggnation, ombyggnation, tillbyggnation och mindre servicearbeten.`,
     ogImageUrl: `https://thorsbygg.se/banner.png`,
     ogType: 'website',

@@ -100,6 +100,7 @@ const ServicesSection = () => {
 
   return (
     <section className={classes.section}>
+      <h2>Tjänster</h2>
       {edges.map(edge => {
         return (
           <Grid

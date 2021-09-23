@@ -48,6 +48,7 @@ const ContactForm = () => {
       </p>
       <TextField
         autoComplete='name'
+        aria-label='Required text-field for name.'
         className={classes.textField}
         color='primary'
         label='Namn'
@@ -57,6 +58,7 @@ const ContactForm = () => {
       />
       <TextField
         autoComplete='email'
+        aria-label='Required text-field for email adress.'
         className={classes.textField}
         color='primary'
         label='E-post'
@@ -66,6 +68,7 @@ const ContactForm = () => {
       />
       <TextField
         autoComplete='organization'
+        aria-label='Optional text-field for name of camompany.'
         className={classes.textField}
         color='primary'
         label='Företag / Organisation'
@@ -73,6 +76,7 @@ const ContactForm = () => {
         type='organization'
       />
       <TextField
+        aria-label='Required multi-lined text-field for message.'
         className={classes.textArea}
         color='primary'
         id='outlined-textarea'

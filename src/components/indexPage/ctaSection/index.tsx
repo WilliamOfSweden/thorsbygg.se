@@ -22,6 +22,12 @@ const useStyles = makeStyles((theme: Theme) =>
         textAlign: 'center',
       },
     },
+    wrapper: {
+      [theme.breakpoints.up('md')]: {
+        paddingBottom: '4rem',
+        paddingTop: '4rem',
+      },
+    },
   })
 )
 
@@ -54,6 +60,7 @@ const CTASection: React.FC = () => {
   return (
     <Container component='section' maxWidth='md'>
       <Box
+        className={classes.wrapper}
         display='flex'
         flexDirection='column'
         alignItems='center'

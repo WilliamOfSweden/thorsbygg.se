@@ -46,7 +46,7 @@ const theme = responsiveFontSizes(
 
         h1: {
           letterSpacing: `2px`,
-          fontFamily: FONTS.headings,
+          fontFamily: `${FONTS.headings}, arial`,
           fontWeight: 900,
         },
 

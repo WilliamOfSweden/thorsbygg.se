@@ -57,8 +57,8 @@ const CTASection: React.FC = () => {
         display='flex'
         flexDirection='column'
         alignItems='center'
-        pb={10}
-        pt={10}
+        pb={4}
+        pt={4}
       >
         <Typography
           align='left'

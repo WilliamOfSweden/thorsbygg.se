@@ -18,7 +18,6 @@ const useStyles = makeStyles((theme: Theme) =>
     container: {
       maxWidth: `800px`,
       paddingBottom: theme.spacing(5),
-
       [theme.breakpoints.up('md')]: {
         paddingBottom: theme.spacing(8),
       },

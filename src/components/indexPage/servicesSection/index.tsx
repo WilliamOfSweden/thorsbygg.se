@@ -100,7 +100,6 @@ const ServicesSection = () => {
 
   return (
     <section className={classes.section}>
-      <h2>Tjänster</h2>
       {edges.map(edge => {
         return (
           <Grid
@@ -119,7 +118,12 @@ const ServicesSection = () => {
               />
             </Grid>
             <Grid className={classes.textWrapper} item xs={12} md={6}>
-              <Typography color='primary' variant='h3' gutterBottom>
+              <Typography
+                color='primary'
+                component='h2'
+                variant='h3'
+                gutterBottom
+              >
                 {edge.node.frontmatter.title}
               </Typography>
               <Typography>{edge.node.internal.content}</Typography>

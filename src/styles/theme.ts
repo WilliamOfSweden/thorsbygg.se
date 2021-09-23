@@ -32,6 +32,10 @@ const theme = responsiveFontSizes(
           '#gatsby-focus-wrapper': {
             overflowX: `hidden`,
           },
+
+          a: {
+            textDecoration: 'none',
+          },
         },
       },
       MuiTypography: {
@@ -45,7 +49,7 @@ const theme = responsiveFontSizes(
         },
 
         h1: {
-          letterSpacing: `2px`,
+          letterSpacing: '2px',
           fontFamily: `${FONTS.headings}, arial`,
           fontWeight: 900,
         },
@@ -55,6 +59,7 @@ const theme = responsiveFontSizes(
           fontFamily: FONTS.headings,
           fontWeight: 800,
         },
+
         h3: {
           letterSpacing: `2px`,
           fontFamily: FONTS.headings,

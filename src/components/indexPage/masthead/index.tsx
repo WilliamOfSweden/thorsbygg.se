@@ -1,10 +1,11 @@
 import React, { FC } from 'react'
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles'
 import { graphql, useStaticQuery } from 'gatsby'
-import Box from '@material-ui/core/Box'
+import Container from '@material-ui/core/Container'
 import { StaticImage } from 'gatsby-plugin-image'
 import Typography from '@material-ui/core/Typography'
 import { FONTS } from '../../../styles/theme'
+import { Box } from '@material-ui/core'
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -13,6 +14,9 @@ const useStyles = makeStyles((theme: Theme) =>
       [theme.breakpoints.up('sm')]: {
         display: `block`,
       },
+    },
+    heading: {
+      fontSize: 'calc(1.2rem + 7.8vw) !important',
     },
     mobileOnly: {
       marginTop: `4rem`,
@@ -53,13 +57,20 @@ const Masthead: FC = () => {
   const classes = useStyles()
 
   return (
-    <Box component='section' pt={12}>
-      <Typography color='primary' variant='h1' align='center'>
-        {title}
-      </Typography>
-      <Typography align='center' className={classes.subHeading}>
-        {content}
-      </Typography>
+    <Container component='section' maxWidth='xl' disableGutters>
+      <Box pb={5} pl={2} pr={2} pt={5}>
+        <Typography
+          className={classes.heading}
+          color='primary'
+          variant='h1'
+          align='center'
+        >
+          {title}
+        </Typography>
+        {/* <Typography align='center' className={classes.subHeading}>
+          {content}
+        </Typography> */}
+      </Box>
       <StaticImage
         className={classes.desktopOnly}
         src='../../../images/hero-img-landscape.jpeg'
@@ -78,7 +89,7 @@ const Masthead: FC = () => {
         placeholder='none'
         layout='fullWidth'
       />
-    </Box>
+    </Container>
   )
 }
 

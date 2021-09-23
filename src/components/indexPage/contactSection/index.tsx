@@ -10,7 +10,6 @@ const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     desktopOnly: {
       display: 'none',
-
       [theme.breakpoints.up('md')]: {
         display: 'block',
       },
@@ -22,10 +21,10 @@ const useStyles = makeStyles((theme: Theme) =>
       display: `flex`,
       flexDirection: `column`,
       justifyContent: 'center',
-      paddingBottom: theme.spacing(8),
+      paddingBottom: theme.spacing(4),
       paddingLeft: theme.spacing(2),
       paddingRight: theme.spacing(2),
-      paddingTop: theme.spacing(8),
+      paddingTop: theme.spacing(4),
 
       '&:nth-last-child(1)': {
         paddingBottom: theme.spacing(2),

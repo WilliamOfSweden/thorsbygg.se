@@ -42,7 +42,7 @@ const ServicesSection = () => {
   const classes = useStyles()
 
   return (
-    <section>
+    <section id='contact'>
       <Grid container alignItems='stretch'>
         <Grid className={classes.gridItem} item xs={12} md={6}>
           <Typography color='primary' variant='h2' gutterBottom>

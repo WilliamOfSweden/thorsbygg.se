@@ -25,11 +25,9 @@ const useStyles = makeStyles((theme: Theme) =>
       paddingLeft: theme.spacing(2),
       paddingRight: theme.spacing(2),
       paddingTop: theme.spacing(4),
-
       '&:nth-last-child(1)': {
         paddingBottom: theme.spacing(2),
       },
-
       [theme.breakpoints.up('lg')]: {
         padding: theme.spacing(8),
       },

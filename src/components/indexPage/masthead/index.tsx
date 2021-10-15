@@ -1,11 +1,12 @@
-import React, { FC } from 'react'
+import React from 'react'
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles'
 import { graphql, useStaticQuery } from 'gatsby'
 import Container from '@material-ui/core/Container'
-import { StaticImage } from 'gatsby-plugin-image'
+import Box from '@material-ui/core/Box'
 import Typography from '@material-ui/core/Typography'
+import { StaticImage } from 'gatsby-plugin-image'
+
 import { FONTS } from '../../../styles/theme'
-import { Box } from '@material-ui/core'
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -31,7 +32,7 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 )
 
-const Masthead: FC = () => {
+const Masthead = () => {
   const {
     file: { childrenMarkdownRemark },
   } = useStaticQuery(

@@ -7,19 +7,16 @@ const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     btn: {
       marginTop: theme.spacing(1),
-
       [theme.breakpoints.up('xl')]: {
         maxWidth: '400px',
         marginLeft: 'auto',
         marginRight: 'auto',
       },
     },
-
     textField: {
       display: `flex`,
       marginBottom: theme.spacing(2),
     },
-
     textArea: {
       display: `flex`,
       marginBottom: theme.spacing(2),

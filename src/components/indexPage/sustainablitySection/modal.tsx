@@ -1,6 +1,5 @@
 import React, {
   Dispatch,
-  FC,
   JSXElementConstructor,
   ReactElement,
   SetStateAction,
@@ -41,7 +40,7 @@ interface Props {
   children: ReactElement<any, string | JSXElementConstructor<any>> | undefined
 }
 
-const Modal: FC<Props> = ({ active, setActive, children }) => {
+const Modal = ({ active, setActive, children }: Props) => {
   const classes = useStyles()
 
   return (

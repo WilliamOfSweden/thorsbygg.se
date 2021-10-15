@@ -28,11 +28,9 @@ const theme = responsiveFontSizes(
             overflowY: `scroll`,
             overflowX: `hidden`,
           },
-
           '#gatsby-focus-wrapper': {
             overflowX: `hidden`,
           },
-
           a: {
             textDecoration: 'none',
           },
@@ -42,24 +40,20 @@ const theme = responsiveFontSizes(
         gutterBottom: {
           marginBottom: `1rem`,
         },
-
         body1: {
           fontFamily: FONTS.body,
           fontSize: 20,
         },
-
         h1: {
           letterSpacing: '2px',
           fontFamily: `${FONTS.headings}, arial`,
           fontWeight: 900,
         },
-
         h2: {
           letterSpacing: `2px`,
           fontFamily: FONTS.headings,
           fontWeight: 800,
         },
-
         h3: {
           letterSpacing: `2px`,
           fontFamily: FONTS.headings,
@@ -71,11 +65,9 @@ const theme = responsiveFontSizes(
       background: {
         default: PALETTE.bg,
       },
-
       primary: {
         main: PALETTE.primary,
       },
-
       text: {
         primary: PALETTE.textColor,
       },

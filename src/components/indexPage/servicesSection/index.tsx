@@ -1,9 +1,10 @@
 import React from 'react'
 import { makeStyles, Theme, createStyles } from '@material-ui/core/styles'
+import { IGatsbyImageData, GatsbyImage } from 'gatsby-plugin-image'
 import { graphql, useStaticQuery } from 'gatsby'
 import Grid from '@material-ui/core/Grid'
 import Typography from '@material-ui/core/Typography'
-import { IGatsbyImageData, GatsbyImage } from 'gatsby-plugin-image'
+
 import { PALETTE } from '../../../styles/theme'
 
 const useStyles = makeStyles((theme: Theme) =>

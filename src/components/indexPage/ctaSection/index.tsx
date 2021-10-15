@@ -11,12 +11,10 @@ const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     btn: {
       marginTop: theme.spacing(1),
-
       [theme.breakpoints.up('sm')]: {
         width: 'inherit',
       },
     },
-
     text: {
       [theme.breakpoints.up('sm')]: {
         textAlign: 'center',
@@ -31,7 +29,7 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 )
 
-const CTASection: React.FC = () => {
+const CTASection = () => {
   const {
     file: { childrenMarkdownRemark },
   } = useStaticQuery(

@@ -1,4 +1,4 @@
-import React, { FC, useState } from 'react'
+import React, { useState } from 'react'
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles'
 import { graphql, useStaticQuery } from 'gatsby'
 import Container from '@material-ui/core/Container'
@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 )
 
-const SustainabilitySection: FC = () => {
+const SustainabilitySection = () => {
   const {
     file: { childrenMarkdownRemark },
   } = useStaticQuery(

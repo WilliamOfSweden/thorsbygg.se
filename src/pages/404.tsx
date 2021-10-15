@@ -1,11 +1,22 @@
-import React, { FC } from 'react'
-import { PageProps } from 'gatsby'
+import React from 'react'
+
 import Layout from '../components/layout/'
 
-const NotFoundPage: FC<PageProps> = () => {
+const NotFoundPage = () => {
   return (
     <Layout>
-      <div />
+      <div
+        style={{
+          height: `100vh`,
+          display: `flex`,
+          justifyContent: `center`,
+          alignItems: `center`,
+        }}
+      >
+        <p style={{ textAlign: `center`, fontSize: `2rem` }}>
+          The website you are trying to reach could not be found.
+        </p>
+      </div>
     </Layout>
   )
 }

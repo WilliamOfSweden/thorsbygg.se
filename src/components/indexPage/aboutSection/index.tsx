@@ -1,11 +1,12 @@
-import React, { FC } from 'react'
+import React from 'react'
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles'
-import { PALETTE } from '../../../styles/theme'
 import { graphql, useStaticQuery } from 'gatsby'
 import Container from '@material-ui/core/Container'
 import Grid from '@material-ui/core/Grid'
-import Typography from '@material-ui/core/Typography'
 import { StaticImage } from 'gatsby-plugin-image'
+import Typography from '@material-ui/core/Typography'
+
+import { PALETTE } from '../../../styles/theme'
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -25,7 +26,6 @@ const useStyles = makeStyles((theme: Theme) =>
       paddingRight: theme.spacing(2),
       paddingBottom: theme.spacing(4),
       paddingTop: theme.spacing(4),
-
       [theme.breakpoints.up('lg')]: {
         padding: theme.spacing(8),
       },
@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 )
 
-const AboutSection: FC = () => {
+const AboutSection = () => {
   const {
     file: { childrenMarkdownRemark },
   } = useStaticQuery(

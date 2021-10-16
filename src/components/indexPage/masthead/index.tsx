@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme: Theme) =>
       },
     },
     heading: {
-      fontSize: 'calc(1.2rem + 7.8vw) !important',
+      fontSize: 'calc(2.1rem + 4.1vw) !important',
     },
     mobileOnly: {
       marginTop: `4rem`,
@@ -59,7 +59,7 @@ const Masthead = () => {
 
   return (
     <Container component='section' maxWidth='xl' disableGutters>
-      <Box pb={5} pl={2} pr={2} pt={5}>
+      <Box pl={2} pr={2} pt={10}>
         <Typography
           className={classes.heading}
           color='primary'
@@ -68,9 +68,9 @@ const Masthead = () => {
         >
           {title}
         </Typography>
-        {/* <Typography align='center' className={classes.subHeading}>
+        <Typography align='center' className={classes.subHeading}>
           {content}
-        </Typography> */}
+        </Typography>
       </Box>
       <StaticImage
         className={classes.desktopOnly}

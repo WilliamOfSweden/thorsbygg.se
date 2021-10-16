@@ -40,10 +40,6 @@ const theme = responsiveFontSizes(
         gutterBottom: {
           marginBottom: `1rem`,
         },
-        body1: {
-          fontFamily: FONTS.body,
-          fontSize: 20,
-        },
         h1: {
           letterSpacing: '2px',
           fontFamily: `${FONTS.headings}, arial`,

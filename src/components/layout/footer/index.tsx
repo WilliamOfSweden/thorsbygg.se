@@ -4,7 +4,7 @@ import { graphql, useStaticQuery } from 'gatsby'
 import Container from '@material-ui/core/Container'
 import Typography from '@material-ui/core/Typography'
 
-import { PALETTE } from '../../../styles/theme'
+import { PALETTE } from '../../../styles/muiTheme'
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({

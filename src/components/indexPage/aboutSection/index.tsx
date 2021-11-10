@@ -6,7 +6,7 @@ import Grid from '@material-ui/core/Grid'
 import { StaticImage } from 'gatsby-plugin-image'
 import Typography from '@material-ui/core/Typography'
 
-import { PALETTE } from '../../../styles/theme'
+import { PALETTE } from '../../../styles/muiTheme'
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({

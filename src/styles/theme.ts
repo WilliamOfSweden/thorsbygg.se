@@ -1,74 +1,25 @@
-import { createTheme, responsiveFontSizes } from '@material-ui/core/styles'
-
-export const PALETTE = {
-  bg: '#fefefe',
-  bgAlt: `#e2e8f7`,
-  primary: `#2a4e6c`,
-  textColor: `#555`,
+const THEME = {
+  breakpoints: {
+    xs: '0px',
+    sm: '600px',
+    md: '900px',
+    lg: '1200px',
+    xl: '1536px',
+  },
+  fonts: {
+    heading: 'montserrat',
+    body: 'raleway',
+    subHeading: 'Nothing You Could Do',
+  },
+  palette: {
+    bg: '#fefefe',
+    bgAlt: `#e2e8f7`,
+    primary: `#2a4e6c`,
+    textColor: `#555555`,
+  },
+  spacing(space: number) {
+    return `${space * 8}px`
+  },
 }
 
-export const FONTS = {
-  headings: 'montserrat',
-  body: 'raleway',
-  subHeading: 'Nothing You Could Do',
-}
-
-const theme = responsiveFontSizes(
-  createTheme({
-    overrides: {
-      MuiButton: {
-        sizeLarge: {
-          letterSpacing: `2px`,
-          padding: `12px 50px`,
-        },
-      },
-      MuiCssBaseline: {
-        '@global': {
-          body: {
-            overflowY: `scroll`,
-            overflowX: `hidden`,
-          },
-          '#gatsby-focus-wrapper': {
-            overflowX: `hidden`,
-          },
-          a: {
-            textDecoration: 'none',
-          },
-        },
-      },
-      MuiTypography: {
-        gutterBottom: {
-          marginBottom: `1rem`,
-        },
-        h1: {
-          letterSpacing: '2px',
-          fontFamily: `${FONTS.headings}, arial`,
-          fontWeight: 900,
-        },
-        h2: {
-          letterSpacing: `2px`,
-          fontFamily: FONTS.headings,
-          fontWeight: 800,
-        },
-        h3: {
-          letterSpacing: `2px`,
-          fontFamily: FONTS.headings,
-          fontWeight: 700,
-        },
-      },
-    },
-    palette: {
-      background: {
-        default: PALETTE.bg,
-      },
-      primary: {
-        main: PALETTE.primary,
-      },
-      text: {
-        primary: PALETTE.textColor,
-      },
-    },
-  })
-)
-
-export default theme
+export default THEME

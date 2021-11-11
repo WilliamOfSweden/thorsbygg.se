@@ -6,7 +6,14 @@ import BgImage from './bgImage'
 
 const Masthead = () => {
   const {
-    file: { childrenMarkdownRemark },
+    file: {
+      childrenMarkdownRemark: [
+        {
+          internal: { content },
+          frontmatter: { title },
+        },
+      ],
+    },
   } = useStaticQuery(
     graphql`
       query IndexPageMastheadQuery {
@@ -23,9 +30,6 @@ const Masthead = () => {
       }
     `
   )
-
-  const { content } = childrenMarkdownRemark[0].internal
-  const { title } = childrenMarkdownRemark[0].frontmatter
 
   return (
     <StyledMasthead>

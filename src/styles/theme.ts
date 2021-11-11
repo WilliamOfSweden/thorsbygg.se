@@ -13,9 +13,13 @@ const THEME = {
   },
   palette: {
     bg: '#fefefe',
-    bgAlt: `#e2e8f7`,
-    primary: `#2a4e6c`,
-    textColor: `#555555`,
+    bgAlt: '#e2e8f7',
+    primary: '#2a4e6c',
+    textColor: '#555555',
+    textInverse: '#ffffff',
+  },
+  shapes: {
+    borderRadius: '4px',
   },
   spacing(space: number) {
     return `${space * 8}px`

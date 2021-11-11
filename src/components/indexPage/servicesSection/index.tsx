@@ -1,72 +1,14 @@
 import React from 'react'
-import { makeStyles, Theme, createStyles } from '@material-ui/core/styles'
-import { IGatsbyImageData, GatsbyImage } from 'gatsby-plugin-image'
+import { GatsbyImage } from 'gatsby-plugin-image'
 import { graphql, useStaticQuery } from 'gatsby'
-import Grid from '@material-ui/core/Grid'
-import Typography from '@material-ui/core/Typography'
 
-import { PALETTE } from '../../../styles/muiTheme'
-
-const useStyles = makeStyles((theme: Theme) =>
-  createStyles({
-    img: {
-      height: `100%`,
-    },
-    outerGrid: {
-      ['&:nth-child(odd)']: {
-        background: PALETTE.bgAlt,
-      },
-      ['&:nth-child(even)']: {
-        [theme.breakpoints.up('md')]: {
-          flexDirection: `row-reverse`,
-        },
-      },
-    },
-    section: {
-      maxWidth: '1536px',
-    },
-    textWrapper: {
-      display: `flex`,
-      flexDirection: `column`,
-      justifyContent: 'center',
-      paddingBottom: theme.spacing(4),
-      paddingLeft: theme.spacing(2),
-      paddingRight: theme.spacing(2),
-      paddingTop: theme.spacing(4),
-
-      [theme.breakpoints.up('lg')]: {
-        padding: theme.spacing(8),
-      },
-    },
-  })
-)
+import { Services } from '../../../typescript/services'
+import { StyledServicesSection } from '../../layout/styledComponents'
 
 const ServicesSection = () => {
-  interface DataProps {
-    allMarkdownRemark: {
-      edges: {
-        node: {
-          id: string
-          frontmatter: {
-            title: string
-            image: {
-              childImageSharp: {
-                gatsbyImageData: IGatsbyImageData
-              }
-            }
-            imageAlt: string
-          }
-          internal: {
-            content: string
-          }
-        }
-      }[]
-    }
-  }
-
   const {
     allMarkdownRemark: { edges },
-  } = useStaticQuery<DataProps>(
+  } = useStaticQuery<Services>(
     graphql`
       query IndexPageServicesSectionQuery {
         allMarkdownRemark(
@@ -97,42 +39,29 @@ const ServicesSection = () => {
     `
   )
 
-  const classes = useStyles()
-
   return (
-    <section className={classes.section}>
+    <StyledServicesSection>
       {edges.map(edge => {
         return (
-          <Grid
-            className={classes.outerGrid}
-            container
-            alignItems='stretch'
-            key={edge.node.id}
-          >
-            <Grid item xs={12} md={6}>
+          <div key={edge.node.id}>
+            <div>
               <GatsbyImage
                 alt={edge.node.frontmatter.imageAlt}
-                className={classes.img}
                 image={
                   edge.node.frontmatter.image.childImageSharp.gatsbyImageData
                 }
               />
-            </Grid>
-            <Grid className={classes.textWrapper} item xs={12} md={6}>
-              <Typography
-                color='primary'
-                component='h2'
-                variant='h3'
-                gutterBottom
-              >
-                {edge.node.frontmatter.title}
-              </Typography>
-              <Typography>{edge.node.internal.content}</Typography>
-            </Grid>
-          </Grid>
+            </div>
+            <div>
+              <div>
+                <h2>{edge.node.frontmatter.title}</h2>
+                <p>{edge.node.internal.content}</p>
+              </div>
+            </div>
+          </div>
         )
       })}
-    </section>
+    </StyledServicesSection>
   )
 }
 

@@ -39,5 +39,19 @@ export default createGlobalStyle`
         font-size: calc(2.1rem + 4.1vw);
       }
     }
+
+    h2 {
+      font-size: 2rem;
+      font-weight: 800;
+      margin-bottom: ${THEME.spacing(2)};
+
+      @media (min-width: ${THEME.breakpoints.sm}) {
+        font-size: 4rem;
+      }
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
   }
 `

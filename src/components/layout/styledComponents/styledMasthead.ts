@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 import THEME from '../../../styles/theme'
 
-const StyledMasthead = styled.div`
+const StyledMasthead = styled.section`
   & > div:first-child {
     padding-left: ${THEME.spacing(2)};
     padding-right: ${THEME.spacing(2)};

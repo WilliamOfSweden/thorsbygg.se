@@ -5,4 +5,4 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/29afc317-9947-4d45-b536-0992875375d7/deploy-status)](https://app.netlify.com/sites/thorsbygg/deploys)
 
-Website built with **Gatsby** and **TypeScript** &amp; **Styled Components** with a **Git-based CMS**.
+Website built with **Gatsby**, **TypeScript** &amp; **Styled Components**, with a **Git-based CMS**.

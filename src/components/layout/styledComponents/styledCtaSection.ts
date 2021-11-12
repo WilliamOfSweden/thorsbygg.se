@@ -8,11 +8,6 @@ const StyledCtaSection = styled.section`
   padding-top: ${THEME.spacing(8)};
   width: min(${THEME.breakpoints.sm}, 100% - ${THEME.spacing(4)});
 
-  button {
-    color: ${THEME.palette.textInverse};
-    background: ${THEME.palette.primary};
-  }
-
   h2 {
     @media (min-width: ${THEME.breakpoints.sm}) {
       text-align: center;

@@ -1,99 +1,60 @@
 import React from 'react'
-import { makeStyles, Theme, createStyles } from '@material-ui/core/styles'
-import TextField from '@material-ui/core/TextField'
-import Button from '@material-ui/core/Button'
 
-const useStyles = makeStyles((theme: Theme) =>
-  createStyles({
-    btn: {
-      marginTop: theme.spacing(1),
-      [theme.breakpoints.up('xl')]: {
-        maxWidth: '400px',
-        marginLeft: 'auto',
-        marginRight: 'auto',
-      },
-    },
-    textField: {
-      display: `flex`,
-      marginBottom: theme.spacing(2),
-    },
-    textArea: {
-      display: `flex`,
-      marginBottom: theme.spacing(2),
-      marginTop: theme.spacing(4),
-    },
-  })
-)
+import { StyledButton, StyledForm } from '../../layout/styledComponents'
 
-const ContactForm = () => {
-  const classes = useStyles()
-
-  return (
-    <form
-      name='contact-form'
-      method='POST'
-      encType='application/x-www-form-urlencoded'
-      data-netlify='true'
-      data-netlify-honeypot='bot-field'
-      id='contact-form'
-    >
-      <input type='hidden' name='form-name' value='contact-form' />
-      <p hidden>
-        <label>
-          <input name='bot-field' />
-        </label>
-      </p>
-      <TextField
-        autoComplete='name'
-        className={classes.textField}
-        color='primary'
+const ContactForm = () => (
+  <StyledForm
+    autoComplete='on'
+    data-netlify='true'
+    data-netlify-honeypot='bot-field'
+    id='contact-form'
+    encType='application/x-www-form-urlencoded'
+    method='POST'
+    name='contact-form'
+  >
+    <input type='hidden' name='form-name' value='contact-form' />
+    <p hidden>
+      <label>
+        <input name='bot-field' />
+      </label>
+    </p>
+    <div>
+      <label htmlFor='name'>Name *</label>
+      <input
+        araia-invalid={false}
+        autoComplete=''
         id='name'
-        label='Namn'
         name='name'
         required
-        type='text'
       />
-      <TextField
-        autoComplete='email'
-        className={classes.textField}
-        color='primary'
+    </div>
+    <div>
+      <label htmlFor='email'>E-post *</label>
+      <input
+        araia-invalid={false}
         id='email'
-        label='E-post'
         name='email'
         required
         type='email'
       />
-      <TextField
-        autoComplete='organization'
-        className={classes.textField}
-        color='primary'
+    </div>
+    <div>
+      <label htmlFor='organization'>Företag / Organisation</label>
+      <input
+        araia-invalid={false}
         id='organization'
-        label='Företag / Organisation'
         name='organization'
-        type='organization'
+        type='text'
       />
-      <TextField
-        className={classes.textArea}
-        color='primary'
-        id='outlined-textarea'
-        label='Meddelande'
-        name='message'
-        multiline
-        required
-        rows={6}
-      />
-      <Button
-        className={classes.btn}
-        color='primary'
-        fullWidth
-        size='large'
-        type='submit'
-        variant='contained'
-      >
-        Skicka
-      </Button>
-    </form>
-  )
-}
+    </div>
+    <div>
+      <label htmlFor='message'>Meddelande</label>
+      <textarea id='message' name='message' required />
+    </div>
+    <StyledButton fullWidth name='send' type='submit'>
+      Skicka
+    </StyledButton>
+  </StyledForm>
+)
 
 export default ContactForm

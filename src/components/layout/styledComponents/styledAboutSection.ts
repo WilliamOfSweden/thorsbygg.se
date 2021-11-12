@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 import THEME from '../../../styles/theme'
 
-const styledServicesSection = styled.section`
+const StyledAboutSection = styled.section`
   & > div {
     @media (min-width: ${THEME.breakpoints.md}) {
       align-items: stretch;
@@ -12,16 +12,9 @@ const styledServicesSection = styled.section`
         flex: 1 1 50%;
       }
 
-      &:nth-child(even) {
-        flex-direction: row-reverse;
-      }
-
-      &:nth-child(odd) {
-        background-color: ${THEME.palette.bgAlt};
-      }
-
       & > div:nth-child(2) {
         align-items: center;
+        background-color: ${THEME.palette.bgAlt};
         display: flex;
         justify-content: center;
 
@@ -45,4 +38,4 @@ const styledServicesSection = styled.section`
   }
 `
 
-export default styledServicesSection
+export default StyledAboutSection

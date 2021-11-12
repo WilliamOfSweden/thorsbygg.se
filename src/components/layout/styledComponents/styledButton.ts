@@ -2,10 +2,15 @@ import styled from 'styled-components'
 
 import THEME from '../../../styles/theme'
 
-const StyledButton = styled.button`
-  background: red;
+interface Props {
+  fullWidth?: boolean
+}
+
+const StyledButton = styled.button<Props>`
+  background: ${THEME.palette.primary};
   border: none;
   border-radius: ${THEME.shapes.borderRadius};
+  color: ${THEME.palette.textInverse};
   cursor: pointer;
   display: block;
   font-weight: 700;
@@ -20,7 +25,7 @@ const StyledButton = styled.button`
   }
 
   @media (min-width: ${THEME.breakpoints.sm}) {
-    max-width: 300px;
+    max-width: ${({ fullWidth }) => (fullWidth ? '100%' : '300px')};
   }
 `
 

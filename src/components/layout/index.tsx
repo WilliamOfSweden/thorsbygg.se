@@ -1,8 +1,7 @@
 import React, { Fragment, ReactNode } from 'react'
 import GlobalStyle from '../../styles/globalStyles'
-import { ThemeProvider } from '@material-ui/styles'
+import { ThemeProvider } from 'styled-components'
 import theme from '../../styles/muiTheme'
-import CssBaseline from '@material-ui/core/CssBaseline'
 
 import Footer from './footer'
 import { StyledMain } from './styledComponents'
@@ -16,7 +15,6 @@ const Layout = ({ children }: Props) => {
     <Fragment>
       <GlobalStyle />
       <ThemeProvider theme={theme}>
-        <CssBaseline />
         <StyledMain>{children}</StyledMain>
         <Footer />
       </ThemeProvider>

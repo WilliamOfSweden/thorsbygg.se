@@ -7,7 +7,7 @@ import StyledFooter from './styledFooter'
 import StyledMain from './styledMain'
 import StyledMasthead from './styledMasthead'
 import StyledServicesSection from './styledServicesSection'
-import StyledSustainabilitySection from './styledSustainablitySection'
+import StyledSustainabilitySection from './styledSustainabilitySection'
 
 export {
   StyledAboutSection,

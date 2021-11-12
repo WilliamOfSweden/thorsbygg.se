@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import scrollTo from 'gatsby-plugin-smoothscroll'
 
-import { StyledCtaSection, StyledButton } from '../../layout/styledComponents'
+import { StyledCtaSection, StyledButton } from '../../layout/styledComponents/'
 
 const CTASection = () => {
   const {

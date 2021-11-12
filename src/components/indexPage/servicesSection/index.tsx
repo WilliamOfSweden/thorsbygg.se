@@ -3,7 +3,7 @@ import { GatsbyImage } from 'gatsby-plugin-image'
 import { graphql, useStaticQuery } from 'gatsby'
 
 import { Services } from '../../../typescript/services'
-import { StyledServicesSection } from '../../layout/styledComponents'
+import { StyledServicesSection } from '../../layout/styledComponents/'
 
 const ServicesSection = () => {
   const {

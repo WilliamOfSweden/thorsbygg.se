@@ -3,6 +3,7 @@ import StyledCtaSection from './styledCtaSection'
 import StyledMain from './styledMain'
 import StyledMasthead from './styledMasthead'
 import StyledServicesSection from './styledServicesSection'
+import StyledSustainabilitySection from './StyledSustainablitySection'
 
 export {
   StyledButton,
@@ -10,4 +11,5 @@ export {
   StyledMain,
   StyledMasthead,
   StyledServicesSection,
+  StyledSustainabilitySection,
 }

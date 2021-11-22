@@ -39,7 +39,7 @@
   "devDependencies": {
     "@types/react-helmet": "6.1.4",
     "@types/styled-components": "5.1.15",
-    "babel-plugin-styled-components": "2.0.0",
+    "babel-plugin-styled-components": "2.0.1",
     "prettier": "2.4.1"
   },
   "repository": {

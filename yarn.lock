@@ -1112,10 +1112,10 @@
   resolved "https://registry.yarnpkg.com/@fontsource/montserrat/-/montserrat-4.5.5.tgz#3408b8a20285a81b0743087bae5ed7aaa32c490c"
   integrity sha512-JEFI803levuRx3D0Lry4WoM/Azrc3xpHlogi2022Y8ykaAenXvrjMym2BVU1W5QsuRIL86vrSUaxchO7Vk4CIw==
 
-"@fontsource/nothing-you-could-do@4.5.1":
-  version "4.5.1"
-  resolved "https://registry.yarnpkg.com/@fontsource/nothing-you-could-do/-/nothing-you-could-do-4.5.1.tgz#a260b2a3b8208ca8130e98511b7ad7addc3bc32d"
-  integrity sha512-nfhkrC/tIwMWhaxma4jYDilBxWsyJutjIEb9wp7vt7D/7KOmI5zg7arUheviJGGDtlKhx70j9N26/kESI5+UlQ==
+"@fontsource/nothing-you-could-do@4.5.3":
+  version "4.5.3"
+  resolved "https://registry.yarnpkg.com/@fontsource/nothing-you-could-do/-/nothing-you-could-do-4.5.3.tgz#a9055cb69fe3f48e43d86059372d7a577b9fdd39"
+  integrity sha512-5Dh5SWnHYYatvcFgkImfE6XMEX/+Jm0SLIscpmZRuyvkxC3tNQ4Hp+TfDxHbmIIrBZm0oURrBA7eMOv3pAqM0A==
 
 "@fontsource/raleway@4.5.3":
   version "4.5.3"

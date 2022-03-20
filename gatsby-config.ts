@@ -1,4 +1,7 @@
-module.exports = {
+import { GatsbyConfig } from 'gatsby'
+import path from 'path'
+
+const gatsbyConfig: GatsbyConfig = {
   siteMetadata: {
     author: 'William Daghouz',
     ogDescription: `Vi utför totalentreprenader, underentreprenader, nybyggnation, ombyggnation, tillbyggnation och mindre servicearbeten.`,
@@ -30,14 +33,14 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `conten`,
-        path: `${__dirname}/content/`,
+        path: path.resolve(`content/`),
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images/`,
+        path: path.resolve(`src/images/`),
       },
     },
     'gatsby-plugin-styled-components',
@@ -45,3 +48,5 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
   ],
 }
+
+export default gatsbyConfig

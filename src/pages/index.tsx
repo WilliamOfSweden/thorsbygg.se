@@ -9,20 +9,18 @@ import SustainabilitySection from '../components/indexPage/sustainablitySection/
 import AboutSection from '../components/indexPage/aboutSection/'
 import ContactSection from '../components/indexPage/contactSection/'
 
-const IndexPage = () => {
-  return (
-    <Fragment>
-      <SEO />
-      <Layout>
-        <Masthead />
-        <CTASection />
-        <ServicesSection />
-        <SustainabilitySection />
-        <AboutSection />
-        <ContactSection />
-      </Layout>
-    </Fragment>
-  )
-}
+const IndexPage = () => (
+  <Fragment>
+    <SEO />
+    <Layout>
+      <Masthead />
+      <CTASection />
+      <ServicesSection />
+      <SustainabilitySection />
+      <AboutSection />
+      <ContactSection />
+    </Layout>
+  </Fragment>
+)
 
 export default IndexPage

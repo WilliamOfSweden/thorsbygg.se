@@ -5,7 +5,7 @@ import { graphql, useStaticQuery } from 'gatsby'
 import { Services } from '../../../typescript/services'
 import { StyledServicesSection } from '../../layout/styledComponents/'
 
-const ServicesSection = () => {
+export const ServicesSection = () => {
   const {
     allMarkdownRemark: { edges },
   } = useStaticQuery<Services>(
@@ -64,5 +64,3 @@ const ServicesSection = () => {
     </StyledServicesSection>
   )
 }
-
-export default ServicesSection

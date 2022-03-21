@@ -2,12 +2,14 @@ import React, { Fragment } from 'react'
 
 import SEO from '../components/seo'
 import Layout from '../components/layout/'
-import Masthead from '../components/indexPage/masthead/'
-import CTASection from '../components/indexPage/ctaSection/'
-import ServicesSection from '../components/indexPage/servicesSection/'
-import SustainabilitySection from '../components/indexPage/sustainablitySection/'
-import AboutSection from '../components/indexPage/aboutSection/'
-import ContactSection from '../components/indexPage/contactSection/'
+import {
+  AboutSection,
+  CTASection,
+  ContactSection,
+  Masthead,
+  ServicesSection,
+  SustainabilitySection,
+} from '../components/indexPageComponents/'
 
 const IndexPage = () => (
   <Fragment>

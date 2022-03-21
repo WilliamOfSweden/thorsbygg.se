@@ -4,7 +4,7 @@ import scrollTo from 'gatsby-plugin-smoothscroll'
 
 import { StyledCtaSection, StyledButton } from '../../layout/styledComponents/'
 
-const CTASection = () => {
+export const CTASection = () => {
   const {
     file: {
       childrenMarkdownRemark: [
@@ -41,5 +41,3 @@ const CTASection = () => {
     </StyledCtaSection>
   )
 }
-
-export default CTASection

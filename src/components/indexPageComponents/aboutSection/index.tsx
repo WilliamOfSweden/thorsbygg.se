@@ -4,7 +4,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 
 import { StyledAboutSection } from '../../layout/styledComponents/'
 
-const AboutSection = () => {
+export const AboutSection = () => {
   const {
     file: { childrenMarkdownRemark },
   } = useStaticQuery(
@@ -50,5 +50,3 @@ const AboutSection = () => {
     </StyledAboutSection>
   )
 }
-
-export default AboutSection

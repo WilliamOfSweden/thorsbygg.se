@@ -4,7 +4,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 import { StyledContactSection } from '../../layout/styledComponents'
 import ContactForm from './contactForm'
 
-const ServicesSection = () => (
+export const ContactSection = () => (
   <StyledContactSection id='contact'>
     <div>
       <div>
@@ -26,5 +26,3 @@ const ServicesSection = () => (
     </div>
   </StyledContactSection>
 )
-
-export default ServicesSection

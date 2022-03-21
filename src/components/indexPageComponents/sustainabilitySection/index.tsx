@@ -4,7 +4,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 
 import { StyledSustainabilitySection } from '../../layout/styledComponents/'
 
-const SustainabilitySection = () => {
+export const SustainabilitySection = () => {
   const {
     file: { childrenMarkdownRemark },
   } = useStaticQuery(
@@ -44,5 +44,3 @@ const SustainabilitySection = () => {
     </StyledSustainabilitySection>
   )
 }
-
-export default SustainabilitySection

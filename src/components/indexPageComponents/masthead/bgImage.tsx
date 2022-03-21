@@ -1,7 +1,7 @@
 import React, { Fragment, useLayoutEffect, useState } from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 
-const BgImage = () => {
+export const BgImage = () => {
   const [size, setSize] = useState(0)
 
   useLayoutEffect(() => {
@@ -40,5 +40,3 @@ const BgImage = () => {
     </Fragment>
   )
 }
-
-export default BgImage

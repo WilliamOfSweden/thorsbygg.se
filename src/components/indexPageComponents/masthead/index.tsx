@@ -2,9 +2,9 @@ import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 
 import { StyledMasthead } from '../../layout/styledComponents/'
-import BgImage from './bgImage'
+import { BgImage } from './bgImage'
 
-const Masthead = () => {
+export const Masthead = () => {
   const {
     file: {
       childrenMarkdownRemark: [

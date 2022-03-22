@@ -1,6 +1,6 @@
 import React, { Fragment, ReactNode } from 'react'
 import GlobalStyle from '../../styles/globalStyles'
-import Footer from './footer'
+import Footer from './footer/'
 
 import { StyledMain } from './styledComponents'
 

@@ -1069,20 +1069,20 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@fontsource/montserrat@4.5.5":
+"@fontsource/montserrat@4.5.7":
+  version "4.5.7"
+  resolved "https://registry.yarnpkg.com/@fontsource/montserrat/-/montserrat-4.5.7.tgz#5fa342958655d3309eeae552a409f75a5453173f"
+  integrity sha512-eROpR2P7faJpXtjPx7XGESSNJXT6zUKUnLuUalR8YRpAi7Z4Hg+++LSTRX2GItQDaQliScGapTW10cYunhQDiw==
+
+"@fontsource/nothing-you-could-do@4.5.5":
   version "4.5.5"
-  resolved "https://registry.yarnpkg.com/@fontsource/montserrat/-/montserrat-4.5.5.tgz#3408b8a20285a81b0743087bae5ed7aaa32c490c"
-  integrity sha512-JEFI803levuRx3D0Lry4WoM/Azrc3xpHlogi2022Y8ykaAenXvrjMym2BVU1W5QsuRIL86vrSUaxchO7Vk4CIw==
+  resolved "https://registry.yarnpkg.com/@fontsource/nothing-you-could-do/-/nothing-you-could-do-4.5.5.tgz#e96dd24a55354f31ea66aabd658e949dc8be9501"
+  integrity sha512-Se0dHW51J1Q3WfxA8rhtEqu8wKzCNlRVp8mxcnuKulEG71+c3shvLsIBeZnbVarLvRIJ/MG3W+Pe7rAPsrtzFQ==
 
-"@fontsource/nothing-you-could-do@4.5.3":
-  version "4.5.3"
-  resolved "https://registry.yarnpkg.com/@fontsource/nothing-you-could-do/-/nothing-you-could-do-4.5.3.tgz#a9055cb69fe3f48e43d86059372d7a577b9fdd39"
-  integrity sha512-5Dh5SWnHYYatvcFgkImfE6XMEX/+Jm0SLIscpmZRuyvkxC3tNQ4Hp+TfDxHbmIIrBZm0oURrBA7eMOv3pAqM0A==
-
-"@fontsource/raleway@4.5.3":
-  version "4.5.3"
-  resolved "https://registry.yarnpkg.com/@fontsource/raleway/-/raleway-4.5.3.tgz#0a4477e037dbd9a4a26c1c9db3aa2bf93722b499"
-  integrity sha512-wJ8Rm8k5MuSnfERuL5Q1bd8Z80o3uWpC1vUmZAxcLXAY9IxnfGqZjZJ1Jd2lY1u5NaEo+zXCvHEViAIv6b1jEg==
+"@fontsource/raleway@4.5.5":
+  version "4.5.5"
+  resolved "https://registry.yarnpkg.com/@fontsource/raleway/-/raleway-4.5.5.tgz#0540aeb025190bdc9bf59669fcffbc95d3b7dc8b"
+  integrity sha512-T2zIJ/6/2x+T9+tLtw/qSiJ68ahcceDMUOU3zrzEyNGYXUvlQyU4Cv9wyTmS+TU9IFHHChjMToV6izRL9mqDqg==
 
 "@gatsbyjs/parcel-namer-relative-to-cwd@0.0.2":
   version "0.0.2"

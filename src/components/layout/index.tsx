@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { GlobalStyles } from '../../styles/globalStyles'
 
 import { THEME } from '../../styles/theme'
-import { Footer } from './footer/'
+import { Footer } from './footer'
 
 const StyledMain = styled.main`
   margin-inline: auto;

@@ -31,12 +31,12 @@ export const BgImage = () => {
 
   return (
     <StaticImage
-      src='../../../images/hero-img-portrait.jpeg'
       alt='Miniature house standing on top of blueprints with bricks in front of it.'
-      loading='eager'
       formats={['auto', 'webp', 'avif']}
-      placeholder='none'
       layout='fullWidth'
+      loading='eager'
+      placeholder='none'
+      src='../../../images/hero-img-portrait.jpeg'
     />
   )
 }

@@ -1,8 +1,22 @@
 import React from 'react'
+import styled from 'styled-components'
 import { graphql, useStaticQuery } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 
-import { StyledSustainabilitySection } from './styledSustainabilitySection'
+import { THEME } from '../../styles/theme'
+
+const StyledSection = styled.section`
+  margin-inline: auto;
+  padding-bottom: ${THEME.spacing(8)};
+  width: min(700px, 100% - ${THEME.spacing(4)});
+
+  @media screen and (min-width: 700px) {
+    h2,
+    p {
+      text-align: center;
+    }
+  }
+`
 
 export const SustainabilitySection = () => {
   const {
@@ -30,7 +44,7 @@ export const SustainabilitySection = () => {
   const { title } = childrenMarkdownRemark[0].frontmatter
 
   return (
-    <StyledSustainabilitySection>
+    <StyledSection>
       <StaticImage
         src='../../../images/sustainability.jpeg'
         alt='Flowers layed on white background, in a heart shape.'
@@ -41,6 +55,6 @@ export const SustainabilitySection = () => {
       />
       <h2>{title}</h2>
       <p>{content}</p>
-    </StyledSustainabilitySection>
+    </StyledSection>
   )
 }

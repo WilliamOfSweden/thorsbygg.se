@@ -1069,15 +1069,10 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@fontsource/nothing-you-could-do@^4.5.5":
+"@fontsource/nothing-you-could-do@4.5.5":
   version "4.5.5"
   resolved "https://registry.yarnpkg.com/@fontsource/nothing-you-could-do/-/nothing-you-could-do-4.5.5.tgz#e96dd24a55354f31ea66aabd658e949dc8be9501"
   integrity sha512-Se0dHW51J1Q3WfxA8rhtEqu8wKzCNlRVp8mxcnuKulEG71+c3shvLsIBeZnbVarLvRIJ/MG3W+Pe7rAPsrtzFQ==
-
-"@fontsource/raleway@4.5.5":
-  version "4.5.5"
-  resolved "https://registry.yarnpkg.com/@fontsource/raleway/-/raleway-4.5.5.tgz#0540aeb025190bdc9bf59669fcffbc95d3b7dc8b"
-  integrity sha512-T2zIJ/6/2x+T9+tLtw/qSiJ68ahcceDMUOU3zrzEyNGYXUvlQyU4Cv9wyTmS+TU9IFHHChjMToV6izRL9mqDqg==
 
 "@gatsbyjs/parcel-namer-relative-to-cwd@0.0.2":
   version "0.0.2"

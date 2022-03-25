@@ -1,0 +1,8 @@
+/* Raleway-latin-400-regular*/
+@font-face {
+  font-display: optional;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./files/raleway-latin-400-normal.woff2') format('woff2');
+}

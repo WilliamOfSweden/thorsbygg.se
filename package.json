@@ -16,7 +16,6 @@
   },
   "dependencies": {
     "@fontsource/nothing-you-could-do": "^4.5.5",
-    "@fontsource/raleway": "4.5.5",
     "gatsby": "4.10.3",
     "gatsby-plugin-image": "2.10.1",
     "gatsby-plugin-preact": "6.10.1",

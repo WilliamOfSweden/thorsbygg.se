@@ -2,7 +2,7 @@ import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import { Helmet } from 'react-helmet'
 
-const SEO = () => {
+export const SEO = () => {
   const data = useStaticQuery(graphql`
     query HeaderQuery {
       site {
@@ -13,6 +13,7 @@ const SEO = () => {
           siteDescription
           siteTitle
           siteUrl
+          twitterCard
         }
       }
     }
@@ -25,21 +26,24 @@ const SEO = () => {
     siteDescription,
     siteTitle,
     siteUrl,
+    twitterCard,
   } = data.site.siteMetadata
 
   return (
     <Helmet>
       <html lang='sv-SE' />
       <meta charSet='UTF-8' />
-      <meta name='description' content={siteDescription} />
-      <meta property='og:url' content={siteUrl} />
-      <meta property='og:type' content={ogType} />
-      <meta property='og:title' content={siteTitle} />
-      <meta property='og:description' content={ogDescription} />
-      <meta property='og:image' content={ogImageUrl} />
+      <meta content={siteDescription} name='description' />
+      <meta content={siteUrl} property='og:url' />
+      <meta content={ogType} property='og:type' />
+      <meta content={siteTitle} property='og:title' />
+      <meta content={ogDescription} property='og:description' />
+      <meta content={ogImageUrl} property='og:image' />
       <title>{siteTitle}</title>
+      <meta name='twitter:card' content={twitterCard} />
+      <meta name='twitter:description' content={ogDescription} />
+      <meta name='twitter:url' content={siteUrl} />
+      <meta property='twitter:image' content={ogImageUrl} />
     </Helmet>
   )
 }
-
-export default SEO

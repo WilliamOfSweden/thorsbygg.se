@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
-import THEME from '../../../styles/theme'
+import { THEME } from '../../../styles/theme'
 
-const StyledFooter = styled.footer`
+export const StyledFooter = styled.footer`
   background-color: ${THEME.palette.primary};
   color: ${THEME.palette.textInverse};
   padding: ${THEME.spacing(4)} 0;
@@ -20,5 +20,3 @@ const StyledFooter = styled.footer`
     }
   }
 `
-
-export default StyledFooter

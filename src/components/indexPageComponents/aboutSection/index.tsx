@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 
-import { StyledAboutSection } from '../../layout/styledComponents/'
+import { StyledAboutSection } from './styledAboutSection'
 
 export const AboutSection = () => {
   const {

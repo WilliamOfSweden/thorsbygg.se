@@ -2,8 +2,8 @@ import React from 'react'
 import { GatsbyImage } from 'gatsby-plugin-image'
 import { graphql, useStaticQuery } from 'gatsby'
 
-import { Services } from '../../../typescript/services'
-import { StyledServicesSection } from '../../layout/styledComponents/'
+import { Services } from '../../../@types/'
+import { StyledServicesSection } from './styledServicesSection'
 
 export const ServicesSection = () => {
   const {

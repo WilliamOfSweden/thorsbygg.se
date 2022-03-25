@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
-import THEME from '../../../styles/theme'
+import { THEME } from '../../../styles/theme'
 
-const StyledForm = styled.form`
+export const StyledForm = styled.form`
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -36,5 +36,3 @@ const StyledForm = styled.form`
     }
   }
 `
-
-export default StyledForm

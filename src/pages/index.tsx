@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 
-import SEO from '../components/seo'
-import Layout from '../components/layout/'
+import { SEO } from '../components/shared/'
+import { Layout } from '../components/layout/'
 import {
   AboutSection,
   CTASection,

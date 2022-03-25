@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
-import THEME from '../../../styles/theme'
+import { THEME } from '../../../styles/theme'
 
-const StyledSustainabilitySection = styled.section`
+export const StyledSustainabilitySection = styled.section`
   margin-inline: auto;
   padding-bottom: ${THEME.spacing(8)};
   width: min(700px, 100% - ${THEME.spacing(4)});
@@ -14,5 +14,3 @@ const StyledSustainabilitySection = styled.section`
     }
   }
 `
-
-export default StyledSustainabilitySection

@@ -10,6 +10,7 @@ const gatsbyConfig: GatsbyConfig = {
     siteDescription: `Company Websites | Thors Bygg`,
     siteTitle: `Thors Bygg`,
     siteUrl: `https://thorsbygg.se`,
+    twitterCard: 'summary_large_image',
   },
   plugins: [
     `gatsby-plugin-image`,

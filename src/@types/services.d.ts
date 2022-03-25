@@ -1,6 +1,6 @@
 import { IGatsbyImageData } from 'gatsby-plugin-image'
 
-interface Services {
+export interface Services {
   allMarkdownRemark: {
     edges: {
       node: {

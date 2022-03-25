@@ -1,16 +1,23 @@
 import styled from 'styled-components'
 
-import THEME from '../../../styles/theme'
+import { THEME } from '../../../styles/theme'
 
-const StyledContactSection = styled.section`
+export const StyledServicesSection = styled.section`
   & > div {
     @media (min-width: ${THEME.breakpoints.md}) {
       align-items: stretch;
       display: flex;
-      flex-direction: row-reverse;
 
       & > div {
         flex: 1 1 50%;
+      }
+
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+      }
+
+      &:nth-child(odd) {
+        background-color: ${THEME.palette.bgAlt};
       }
 
       & > div:nth-child(2) {
@@ -20,7 +27,6 @@ const StyledContactSection = styled.section`
 
         & > div {
           max-width: 70ch;
-          width: 100%;
 
           & > h2 {
             font-size: 3rem;
@@ -38,5 +44,3 @@ const StyledContactSection = styled.section`
     }
   }
 `
-
-export default StyledContactSection

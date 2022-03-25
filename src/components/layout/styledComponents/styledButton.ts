@@ -1,12 +1,12 @@
 import styled from 'styled-components'
 
-import THEME from '../../../styles/theme'
+import { THEME } from '../../../styles/theme'
 
 interface Props {
   fullWidth?: boolean
 }
 
-const StyledButton = styled.button<Props>`
+export const StyledButton = styled.button<Props>`
   background: ${THEME.palette.primary};
   border: none;
   border-radius: ${THEME.shapes.borderRadius};
@@ -28,5 +28,3 @@ const StyledButton = styled.button<Props>`
     max-width: ${({ fullWidth }) => (fullWidth ? '100%' : '300px')};
   }
 `
-
-export default StyledButton

@@ -1,19 +1,23 @@
 import React, { Fragment, ReactNode } from 'react'
-import GlobalStyle from '../../styles/globalStyles'
-import Footer from './footer/'
+import styled from 'styled-components'
+import { GlobalStyles } from '../../styles/globalStyles'
 
-import { StyledMain } from './styledComponents'
+import { THEME } from '../../styles/theme'
+import { Footer } from './footer/'
+
+const StyledMain = styled.main`
+  margin-inline: auto;
+  width: min(${THEME.breakpoints.xl}, 100%);
+`
 
 interface Props {
   children: ReactNode
 }
 
-const Layout = ({ children }: Props) => (
+export const Layout = ({ children }: Props) => (
   <Fragment>
-    <GlobalStyle />
+    <GlobalStyles />
     <StyledMain>{children}</StyledMain>
     <Footer />
   </Fragment>
 )
-
-export default Layout

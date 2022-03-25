@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
-import THEME from '../../../styles/theme'
+import { THEME } from '../../../styles/theme'
 
-const StyledAboutSection = styled.section`
+export const StyledAboutSection = styled.section`
   & > div {
     @media (min-width: ${THEME.breakpoints.md}) {
       align-items: stretch;
@@ -37,5 +37,3 @@ const StyledAboutSection = styled.section`
     }
   }
 `
-
-export default StyledAboutSection

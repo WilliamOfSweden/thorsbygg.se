@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
-import THEME from '../../../styles/theme'
+import { THEME } from '../../../styles/theme'
 
-const StyledCtaSection = styled.section`
+export const StyledCtaSection = styled.section`
   margin-inline: auto;
   padding-bottom: ${THEME.spacing(8)};
   padding-top: ${THEME.spacing(8)};
@@ -18,5 +18,3 @@ const StyledCtaSection = styled.section`
     margin-bottom: ${THEME.spacing(2)};
   }
 `
-
-export default StyledCtaSection

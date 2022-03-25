@@ -1,4 +1,4 @@
-const THEME = {
+export const THEME = {
   breakpoints: {
     xs: '0px',
     sm: '600px',
@@ -25,5 +25,3 @@ const THEME = {
     return `${space * 8}px`
   },
 }
-
-export default THEME

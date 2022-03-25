@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 
-import { StyledMasthead } from '../../layout/styledComponents/'
+import { StyledMasthead } from './styledMasthead'
 import { BgImage } from './bgImage'
 
 export const Masthead = () => {
@@ -41,5 +41,3 @@ export const Masthead = () => {
     </StyledMasthead>
   )
 }
-
-export default Masthead

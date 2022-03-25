@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 
-import { StyledSustainabilitySection } from '../../layout/styledComponents/'
+import { StyledSustainabilitySection } from './styledSustainabilitySection'
 
 export const SustainabilitySection = () => {
   const {

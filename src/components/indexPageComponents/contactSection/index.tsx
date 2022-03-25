@@ -1,8 +1,8 @@
 import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 
-import { StyledContactSection } from '../../layout/styledComponents'
-import ContactForm from './contactForm'
+import { StyledContactSection } from './styledContactSection'
+import { ContactForm } from './contactForm'
 
 export const ContactSection = () => (
   <StyledContactSection id='contact'>

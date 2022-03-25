@@ -1,8 +1,8 @@
 import { createGlobalStyle } from 'styled-components'
 
-import THEME from './theme'
+import { THEME } from './theme'
 
-export default createGlobalStyle`
+export const GlobalStyles = createGlobalStyle`
   * {
     box-sizing: border-box;
     margin: 0;

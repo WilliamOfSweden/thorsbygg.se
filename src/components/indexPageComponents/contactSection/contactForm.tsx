@@ -1,8 +1,9 @@
 import React from 'react'
 
-import { StyledButton, StyledForm } from '../../layout/styledComponents'
+import { StyledForm } from './styledForm'
+import { StyledButton } from '../../layout/styledComponents/'
 
-const ContactForm = () => (
+export const ContactForm = () => (
   <StyledForm
     autoComplete='on'
     data-netlify='true'
@@ -56,5 +57,3 @@ const ContactForm = () => (
     </StyledButton>
   </StyledForm>
 )
-
-export default ContactForm

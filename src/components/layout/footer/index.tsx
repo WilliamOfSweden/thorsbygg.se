@@ -1,9 +1,9 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 
-import { StyledFooter } from '../styledComponents/'
+import { StyledFooter } from './styledFooter'
 
-const Footer = () => {
+export const Footer = () => {
   const {
     site: {
       siteMetadata: { author },
@@ -34,5 +34,3 @@ const Footer = () => {
     </StyledFooter>
   )
 }
-
-export default Footer

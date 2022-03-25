@@ -9,20 +9,16 @@ const StyledFooter = styled.footer`
   color: ${THEME.palette.textInverse};
   padding: ${THEME.spacing(4)} 0;
 
-  & > div {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  a {
+    color: ${THEME.palette.textInverse};
+    display: block;
+    font-size: 1.2rem;
     margin-inline: auto;
-    width: min(${THEME.breakpoints.xl}, 100% - ${THEME.spacing(4)});
+    text-align: center;
+    width: min(${THEME.breakpoints.sm}, 100% - ${THEME.spacing(4)});
 
-    a {
-      color: ${THEME.palette.textInverse};
-      font-size: 1.2rem;
-
-      & > span {
-        text-decoration: underline;
-      }
+    & > span {
+      text-decoration: underline;
     }
   }
 `
@@ -44,16 +40,14 @@ export const Footer = () => {
 
   return (
     <StyledFooter>
-      <div>
-        <a
-          aria-label='Link to developers website.'
-          href='https://daghouz.com'
-          rel='noreferrer noopener'
-          target='_blank'
-        >
-          Website developed by <span>{author}</span>.
-        </a>
-      </div>
+      <a
+        aria-label='Link to developers website.'
+        href='https://daghouz.com'
+        rel='noreferrer noopener'
+        target='_blank'
+      >
+        Website developed by <span>{author}</span>.
+      </a>
     </StyledFooter>
   )
 }

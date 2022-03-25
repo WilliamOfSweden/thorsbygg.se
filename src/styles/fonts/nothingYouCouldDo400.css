@@ -1,0 +1,9 @@
+/* Nothing-you-could-do-latin-400-normal*/
+@font-face {
+  font-display: optional;
+  font-family: 'Nothing You Could Do';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./files/nothing-you-could-do-latin-400-normal.woff2')
+    format('woff2');
+}

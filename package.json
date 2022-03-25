@@ -15,8 +15,6 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "@fontsource/montserrat": "4.5.7",
-    "@fontsource/nothing-you-could-do": "4.5.5",
     "@fontsource/raleway": "4.5.5",
     "gatsby": "4.10.3",
     "gatsby-plugin-image": "2.10.1",

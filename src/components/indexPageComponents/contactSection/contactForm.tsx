@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { StyledForm } from './styledForm'
-import { StyledButton } from '../../layout/styledComponents/'
+import { StyledButton } from '../../shared/'
 
 export const ContactForm = () => (
   <StyledForm

@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { THEME } from '../../../styles/theme'
+import { THEME } from '../../styles/theme'
 
 interface Props {
   fullWidth?: boolean

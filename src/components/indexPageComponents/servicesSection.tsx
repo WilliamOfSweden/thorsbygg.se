@@ -4,7 +4,7 @@ import { GatsbyImage } from 'gatsby-plugin-image'
 import { graphql, useStaticQuery } from 'gatsby'
 
 import { THEME } from '../../styles/theme'
-import { Services } from '../../@types'
+import { Services } from '../../@types/'
 
 export const StyledSection = styled.section`
   & > div {

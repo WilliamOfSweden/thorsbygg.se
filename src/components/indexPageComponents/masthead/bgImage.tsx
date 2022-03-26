@@ -14,7 +14,7 @@ export const BgImage = () => {
         layout='fullWidth'
         loading='eager'
         placeholder='none'
-        src='../../../images/hero-img-landscape.jpeg'
+        src='../../../images/hero-img-portrait.jpeg'
       />
     )
   }
@@ -26,7 +26,7 @@ export const BgImage = () => {
       layout='fullWidth'
       loading='eager'
       placeholder='none'
-      src='../../../images/hero-img-portrait.jpeg'
+      src='../../../images/hero-img-landscape.jpeg'
     />
   )
 }

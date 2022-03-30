@@ -46,7 +46,7 @@ export const SustainabilitySection = () => {
   return (
     <StyledSection>
       <StaticImage
-        src='../../../images/sustainability.jpeg'
+        src='../../images/sustainability.jpeg'
         alt='Flowers layed on white background, in a heart shape.'
         loading='eager'
         formats={['auto', 'webp', 'avif']}

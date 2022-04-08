@@ -1,1 +1,1 @@
-export * from './masthead'
+export * from './masthead/'

@@ -1,22 +1,8 @@
 import React from 'react'
-import styled from 'styled-components'
 import { graphql, useStaticQuery } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 
-import { THEME } from '../../styles/theme'
-
-const StyledSection = styled.section`
-  margin-inline: auto;
-  padding-bottom: ${THEME.spacing(8)};
-  width: min(700px, 100% - ${THEME.spacing(4)});
-
-  @media screen and (min-width: 700px) {
-    h2,
-    p {
-      text-align: center;
-    }
-  }
-`
+import { StyledSection } from './styledSection'
 
 export const SustainabilitySection = () => {
   const {

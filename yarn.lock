@@ -1185,10 +1185,10 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@fontsource/nothing-you-could-do@4.5.5":
-  version "4.5.5"
-  resolved "https://registry.yarnpkg.com/@fontsource/nothing-you-could-do/-/nothing-you-could-do-4.5.5.tgz#e96dd24a55354f31ea66aabd658e949dc8be9501"
-  integrity sha512-Se0dHW51J1Q3WfxA8rhtEqu8wKzCNlRVp8mxcnuKulEG71+c3shvLsIBeZnbVarLvRIJ/MG3W+Pe7rAPsrtzFQ==
+"@fontsource/nothing-you-could-do@4.5.7":
+  version "4.5.7"
+  resolved "https://registry.yarnpkg.com/@fontsource/nothing-you-could-do/-/nothing-you-could-do-4.5.7.tgz#5d0f0f3a8403206f8d7d0766dd126827a6cd0e34"
+  integrity sha512-4tUnFvMy0/ejN//sRxNGGmuXH0xJzSWkh0aMjjZiaXg9EuBoArfBCZPii3oiZMTar7dhXxeUPysTzNJs1Db8Uw==
 
 "@gatsbyjs/parcel-namer-relative-to-cwd@0.0.2":
   version "0.0.2"

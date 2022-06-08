@@ -17,9 +17,9 @@
   "dependencies": {
     "@fontsource/nothing-you-could-do": "4.5.7",
     "gatsby": "4.16.0",
-    "gatsby-plugin-image": "2.16.0",
+    "gatsby-plugin-image": "2.16.1",
     "gatsby-plugin-react-helmet": "5.16.0",
-    "gatsby-plugin-sharp": "4.16.0",
+    "gatsby-plugin-sharp": "4.16.1",
     "gatsby-plugin-smoothscroll": "1.2.0",
     "gatsby-plugin-styled-components": "5.16.0",
     "gatsby-remark-images": "6.16.0",
